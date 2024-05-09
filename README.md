@@ -180,7 +180,7 @@ print(tokenizer.decode(output_ids[input_ids.shape[1]:], skip_special_tokens=True
       python script/merge_lora_weights.py \
         --model-path /path/to/csg_vl_lora_weights \
         --model-base /path/to/base_llm_model \
-        --model-typewukong \
+        --model-type wukong \
         --save-model-path /path/to/merged_model
       ```
       Or you can use it without merging as below.

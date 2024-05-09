@@ -169,7 +169,7 @@ print(tokenizer.decode(output_ids[input_ids.shape[1]:], skip_special_tokens=True
         --port 40000 \
         --worker http://localhost:40000 \
         --model-path /path/to/csg-vl/model \
-        --model-type phi-2
+        --model-type wukong
       ```
 
   * For LoRA tuning models
@@ -180,7 +180,7 @@ print(tokenizer.decode(output_ids[input_ids.shape[1]:], skip_special_tokens=True
       python script/merge_lora_weights.py \
         --model-path /path/to/csg_vl_lora_weights \
         --model-base /path/to/base_llm_model \
-        --model-type phi-2 \
+        --model-typewukong \
         --save-model-path /path/to/merged_model
       ```
       Or you can use it without merging as below.
@@ -193,7 +193,7 @@ print(tokenizer.decode(output_ids[input_ids.shape[1]:], skip_special_tokens=True
         --worker http://localhost:40000 \
         --model-path /path/to/csg_vl_lora_weights \
         --model-base /path/to/base_llm_model \
-        --model-type phi-2
+        --model-type wukong
       ```
 
 
@@ -206,7 +206,7 @@ For CLI-based inference without using the Gradio interface, use the following co
   ```shell
   python -m csg_vl.serve.cli \
   	--model-path /path/to/csg-vl/model \
-  	--model-type phi-2 \
+  	--model-type wukong \
   	--image-file /path/to/the/test/image
   ```
 
@@ -218,7 +218,7 @@ For CLI-based inference without using the Gradio interface, use the following co
   python script/merge_lora_weights.py \
   	--model-path /path/to/csg_vl_lora_weights \
   	--model-base /path/to/base_llm_model \
-  	--model-type phi-2 \
+  	--model-type wukong \
   	--save-model-path /path/to/merged_model
   ```
 
@@ -228,7 +228,7 @@ For CLI-based inference without using the Gradio interface, use the following co
   python -m csg_vl.serve.cli \
   	--model-path /path/to/csg_vl_lora_weights \
   	--model-base /path/to/base_llm_model \
-  	--model-type phi-2 \
+  	--model-type wukong \
   	--image-file /path/to/the/test/image
   ```
 

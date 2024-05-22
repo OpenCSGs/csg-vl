@@ -111,8 +111,8 @@ print(tokenizer.decode(output_ids[input_ids.shape[1]:], skip_special_tokens=True
 * Install csg-vl and other requirements
 
   ```shell
-  git clone https://github.com/OpenCSGs/CSG-VL.git
-  cd CSG-VL
+  git clone https://github.com/OpenCSGs/csg-vl.git
+  cd csg-vl
   pip install -e .
   ```
 
